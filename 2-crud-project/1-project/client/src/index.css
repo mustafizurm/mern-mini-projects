@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+tr{
+    text-align: left;
+}
+
+tbody td{
+    padding: 8px 0px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: rgba(0, 0, 0, 0.07);
+}
