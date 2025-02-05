@@ -6,8 +6,10 @@ const connectDataBase = () => {
         console.log(`Database is connected with ${data.connection.host}`)
     })
     .catch((error)=> {
-        console.log(`Database is not connect, something is wrong`)
+        console.log(`Database is not connect, something is wrong`+ error)
     })
 }
 
 module.exports = connectDataBase;
+
+

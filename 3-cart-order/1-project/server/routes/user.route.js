@@ -1,10 +1,11 @@
 const express = require("express");
-const { userRegister, userLogin } = require("../controller/user.controller");
+const { userRegister, userLogin, userLogout } = require("../controller/user.controller");
 const Router = express.Router();
 
 // user
 Router.post("/user/register", userRegister)
 Router.post("/user/login", userLogin)
+Router.get("/user/logout", userLogout)
 Router.put("/user/profile/update/:id")
 Router.put("/user/password/update/:id")
 Router.put("/user/password/forgat/:id")
